@@ -1,0 +1,239 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html,
+body {
+  font-family: "Inconsolata";
+  font-size: 20px;
+  color: white;
+  background-image: url(jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+#nav {
+  height: 63px;
+  width: 100vw;
+  /* background-color: #5d9e57; */
+  background-color: #021722;
+  backdrop-filter: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navname {
+  font-weight: 70;
+  padding-left: 50px;
+}
+#contact {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  cursor: pointer;
+  color: white;
+  padding-right: 50px;
+}
+#home{
+  padding-right: 50px;
+  font-size: 32px;
+  font-weight: 100;
+  cursor: pointer;
+  color: white;
+}
+#navleft{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 9vmin;
+  
+}
+h2
+{ display: inline-block;
+  
+}
+h2:after{
+  content: '';
+  width: 0px;
+  height: 2.5px;
+  display: block;
+  background: rgb(251, 251, 251);
+  transition: 300ms;
+}
+h2:hover:after{
+  width: 100%;
+}
+#projects{
+  margin-left: 1min;
+  font-size: 30px;
+  font-weight: 100;
+  cursor: pointer;
+  color: white;
+  padding-right: 50px;
+}
+.hero {
+  height: 300px;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#img1 {
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background-color: rgb(25, 21, 21);
+
+  background-image: url(port.jpg);
+  object-fit: cover;
+  background-size: cover;
+  margin-right: 100px;
+}
+
+#links{
+  margin: 72px 0px 0px 51.7rem;
+}
+#ins,#lin,#git{
+  width: 70px;
+  color: white;
+  transition: all ease-in-out 0.2s 0s;
+  text-decoration: none;
+  float: left;
+  border: none ;
+}
+#ins:hover{
+  transform: scale(1.1);
+  box-shadow: 1 0 9px #e3e3e1;
+  text-shadow: 0 0 9px #ebebe4;
+}
+#lin:hover{
+  transform: scale(1.1);
+  box-shadow: 1 0 9px #e3e3e1;
+  text-shadow: 0 0 9px #ebebe4;
+}
+#git:hover{
+  transform: scale(1.1);
+  box-shadow: 1 0 9px #e3e3e1;
+  text-shadow: 0 0 9px #ebebe4;
+}
+#intro {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+#greet {
+  font-size: 40px;
+  line-height: 50px;
+}
+#name {
+  font-size: 40px;
+  line-height: 81px;
+}
+#prof {
+  display: inline-block;
+  width: 70%;
+  font-size: 40px;
+  line-height: 80px;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(23), cursor 0.4s step-end infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+#cv {
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 20px;
+  background-color: rgb(111, 220, 140);
+  font-weight: 550;
+}
+#cv:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all ease-in-out 0.5s 0.1s;
+}
+@media (max-width: 768px) {
+  #navname {
+    padding-left: 0.5rem;
+  }
+
+  #contact {
+    margin-left: 1rem;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  #img1 {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 0.5rem;
+  }
+
+  #intro {
+    padding: 0.5rem;
+  }
+
+  #greet,
+  #name,
+  #prof {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  #cv {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  #nav {
+    height: auto;
+  }
+
+  #navname {
+    padding-left: 0.5rem;
+  }
+
+  #contact {
+    margin-left: 0.5rem;
+    font-size: 14px;
+  }
+
+  .hero {
+    margin-top: 30px;
+  }
+
+  #img1 {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  #intro {
+    padding: 0.5rem;
+  }
+
+  #greet,
+  #name,
+  #prof {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  #cv {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+  }
+}
